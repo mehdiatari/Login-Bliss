@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Default theme */
+body.theme1 {
+    background-color: #fff;
+    color: #333;
+}
+
+body.theme2 {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Add more themes as needed */

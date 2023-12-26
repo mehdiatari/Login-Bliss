@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Code Display</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // تابع برای ایجاد کد رندوم ماتریکسی
+        function generateMatrixCode() {
+            const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            const codeLength = 20;
+            let matrixCode = '';
+
+            for (let i = 0; i < codeLength; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                matrixCode += characters.charAt(randomIndex);
+            }
+
+            return matrixCode;
+        }
+
+        // تابع برای نمایش کد ماتریکسی
+        function displayMatrixCode() {
+            const matrixCode = generateMatrixCode();
+            document.body.innerText = matrixCode;
+
+            // اجرای تابع بعدی برای نمایش کد جدید پس از یک زمان مشخص
+            setTimeout(displayMatrixCode, 1000);
+        }
+
+        // اجرای تابع اولیه
+        displayMatrixCode();
+
+        // افزودن یک گوش دادن به کلیدها
+        document.addEventListener('keydown', () => {
+            displayMatrixCode();
+        });
+    </script>
+</body>
+</html>

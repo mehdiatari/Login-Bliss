@@ -1,0 +1,66 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial',sans-serif;
+    margin: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-container {
+    display: flex;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.matrix-windows {
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix-code {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-box {
+    background-color: #000;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
